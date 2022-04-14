@@ -83,7 +83,9 @@ buttonShowMoreComments.addEventListener('click', () => {
 });
 
 document.addEventListener('keydown', (evt) => {
+  evt.preventDefault();
   if (isEscapeKey(evt)) {
+    evt.preventDefault();
     closeModal();
   }
 });
